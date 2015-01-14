@@ -13,6 +13,14 @@ T=size(epsilon,1);
 
 Y=zeros(T,n);
 
+% Cambiar los puntos de partida
+%partida=normrnd(0,1,1,n);
+% Reemplazo de la primera fila
+%Y(1,:)=partida;
+
+% Lo anterior en una sola fila
+%Y=[normrnd(0,1,1,n);zeros(T-1,n)];
+
 % CONSTRUYENDO LAS SERIES
 for k=1:n
     for t=2:T
